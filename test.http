@@ -1,0 +1,48 @@
+### Get all categories
+GET http://localhost:1234/api/categories
+X-API-Key: RAHASIA
+Accept: application/json
+
+### Create new category
+POST http://localhost:1234/api/categories
+X-API-Key: RAHASIA
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title" : "MENGELEARN MIM",
+  "description" : "MENGELARAVEL ITU MUDAH"
+}
+
+### Get category by Id
+GET http://localhost:1234/api/categories/43
+X-API-Key: RAHASIA
+Accept: application/json
+
+
+### Update title and description by id
+PUT http://localhost:1234/api/todoliests/43
+X-API-Key: RAHASIA
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title" : "MENGELEARN KAGURA",
+  "description" : "IN YT JESS NO BOYOT"
+}
+
+### Update status by id
+PUT http://localhost:1234/api/categories/43
+X-API-Key: RAHASIA
+Accept: application/json
+Content-Type: application/json
+
+{
+  "status" : "DONE"
+}
+
+
+### Delete category by id
+DELETE http://localhost:1234/api/categories/43
+X-API-Key: RAHASIA
+Accept: application/json
